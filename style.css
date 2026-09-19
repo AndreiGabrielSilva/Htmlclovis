@@ -1,0 +1,116 @@
+/*
+  ESTILO DA TABELA
+  ----------------
+
+  Este arquivo contém somente a aparência da página.
+  Os dados ficam no config.js e a montagem da tabela fica no script.js.
+*/
+
+/* Inclui padding e borda no tamanho total dos elementos. */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove a margem padrão e define uma fonte simples e legível. */
+body {
+  margin: 0;
+  padding: 32px 16px;
+  background-color: #ffffff;
+  color: #111111;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Limita a largura para a tabela não ficar exageradamente esticada. */
+.container {
+  width: min(100%, 1000px);
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 26px;
+}
+
+/*
+  Permite rolagem horizontal em telas pequenas.
+  Assim, a tabela continua utilizável no celular sem quebrar o layout.
+*/
+.tabela-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* Cor azul usada no cabeçalho e na primeira coluna da imagem. */
+thead th,
+tbody td:first-child {
+  background-color: #4f81bd;
+  color: #ffffff;
+}
+
+/* Estilo do cabeçalho. */
+thead th {
+  padding: 10px;
+  border: 1px solid #ffffff;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+/* Estilo geral das células de dados. */
+tbody td {
+  padding: 9px 10px;
+  border: 1px solid #ffffff;
+  background-color: #e9eef6;
+  font-size: 18px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  vertical-align: middle;
+}
+
+/* Coluna do nome do campo em negrito, como no exemplo da imagem. */
+tbody td:first-child {
+  font-weight: bold;
+}
+
+/* Alterna a cor das linhas para facilitar a leitura. */
+tbody tr:nth-child(even) td:not(:first-child) {
+  background-color: #d3deee;
+}
+
+/* Define proporções parecidas com as colunas do exemplo. */
+th:nth-child(1),
+td:nth-child(1) {
+  width: 17%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 14%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 19%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 10%;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+  width: 11%;
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+  width: 29%;
+}

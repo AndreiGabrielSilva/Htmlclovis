@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela de Campos</title>
+
+  <!--
+    O CSS fica em um arquivo separado para manter o HTML simples.
+    Toda a aparência da tabela está no arquivo style.css.
+  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Tabela de campos - Ordens de Serviço</h1>
+
+    <!--
+      Esta tabela começa sem linhas de dados de propósito.
+      O arquivo script.js vai ler o array do config.js e criar cada linha
+      automaticamente dentro do elemento com id="tabela-corpo".
+
+      Assim, para trocar os campos, você não precisa alterar este HTML:
+      basta editar o arquivo config.js.
+    -->
+    <div class="tabela-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome do Campo</th>
+            <th>Tipo de Dado</th>
+            <th>Tamanho / Precisão</th>
+            <th>Nulo?</th>
+            <th>Chave</th>
+            <th>Descrição / Regra de Negócio</th>
+          </tr>
+        </thead>
+
+        <!-- As linhas configuradas serão inseridas aqui pelo JavaScript. -->
+        <tbody id="tabela-corpo"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <!--
+    A ordem é importante:
+    1. Primeiro carregamos a configuração.
+    2. Depois carregamos o código que usa essa configuração.
+  -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
