@@ -47,7 +47,7 @@ O `config.js` precisa ser carregado primeiro porque o `script.js` utiliza a vari
 Não é necessário instalar bibliotecas ou configurar um servidor.
 
 Basta abrir o arquivo `index.html` em um navegador. Também é possível abrir a pasta no Visual Studio Code e usar uma extensão como Live Server, caso você já tenha essa extensão instalada.
-
+	
 ## Como adicionar ou alterar campos
 
 Edite somente o arquivo `config.js`.
